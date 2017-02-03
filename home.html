@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="es"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="es"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="es"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Francisco Ilabaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script src="js/myscript.js"></script>
+</head>
+<body>
+  <div class="menu_bar">
+    <a href="#" class="btn-menu">Menu</a>
+  </div>
+  <section id="wrapper">
+    <header>
+      <section id="logo">
+        <h3>Doctor Francisco Ilabaca // Especialista en cirugoa de Columna</h3>
+        <a href="#"><img src="img/logo.png" height="90" width="258" alt="Dr. Francisco Ilabaca"/></a>
+      </section>
+      <section id="brows_date"><!--brows_date-->
+        <div class="fandg"><!--G+-->
+          <div class="g-plusone" data-size="medium" data-href="http://www.doctorilabaca.cl/"></div>
+            <script type="text/javascript">
+              window.___gcfg = {lang: 'es'};
+              (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/platform.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+        </div><!--end G+-->
+        <div class="fandg"><!--F-->
+          <div class="fb-like" data-href="http://www.doctorilabaca.cl/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>   
+        </div><!--end F-->       
+        <form method="get" id="searchform" action="http://www.doctorilabaca.cl/"> 
+        <input type="text" value="Buscar..." name="s" id="s" onblur="if (this.value == '') {this.value = 'Buscar...';}" onfocus="if (this.value == 'Buscar...') {this.value = '';}" /> 
+        <input type="hidden" id="searchsubmit" /> 
+        </form>
+              <p><script type="text/javascript">document.write (Muestrafecha());</script></p>
+      </section><!--END brows_date-->
+    </header>
+    <nav id="menu">
+      <ul>
+        <li class="current_page_item"><a href="#">Home</a></li>
+        <li><a href="page.html">Profesional</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Publicaciones</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Ubicación</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="no-slide">
+      <section id="slideshow">
+          <img class="thumb" src="img/slide-1.jpg" height="390" width="940" alt="Alivio al dolor"/>
+          <img class="thumb" src="img/slide-2.jpg" height="390" width="940" alt="Mejorando la calida de vida" />
+      </section>
+    </div>
+    <div id="bar">
+      <h1>Especialista en cirugía de Columna Vertebral</h1>
+    </div>
+    <section id="main">
+      <?php 
+      $temp_post = $post; 
+      $args_home = array('category_name' => 'Bienvenidos', 
+                                      'post_per_page' => 1);
+      $category_posts = new WP_Query($args_home);
+      if($category_posts->have_posts()) : while($category_posts->have_posts()) : $category_posts->the_post(); ?>
+        <article class="inibox_left">
+          <h2><?php the_title();?></h2>
+          <i></i>
+          <?php the_content(); ?>
+        </article>
+      <?php endwhile; else: ?>
+        <article>
+          <div class="post-vacio">
+            <h3>¡Contenido en edición!</h3>
+            <strong>categoría sin asignar</strong>
+            <p>Pronto estará disponible este contenido</p>
+          </div>
+        </article>
+      <?php endif;?>
+      <article class="inibox_right">
+        <h2>Servicios</h2>
+        <p>Otorgar el mejor tratamiento existente para el alivio del dolor de la columna vertebral, de manera escalonada, realizando cirugías solo en caso de indicación absoluta. Visite la página de Servicios, para conocer más sobre cada uno de los tratamientos que ofrecemos.</p>
+      </article>
+    </section>
+    <footer>
+      <div id="foot_cont">
+        <div class="foot_one_left">
+          <img src="img/f_doctor.png" alt="Acerca del doctor">
+          <h3>Especialista</h3>
+          <p>Conozca más sobre el especialista Doctor Francisco Ilabaca, cirujano de columna vertebral.</p>
+        </div>
+          <div class="foot_two_left">
+        <img src="img/f_education.png" alt="Educación del paciente">
+          <h3>Educación</h3>
+          <p>Aprenda sobre las condiciones que producen el dolor y los procedimientos ofrecidos desde nuestra Biblioteca Interactiva.</p>
+        </div>
+        <div class="foot_one_right">
+          <img src="img/f_link.png" alt="Links">
+          <h3>Links</h3>
+          <p>Visite nuestra página de Links para mostrarle sitios web relacionados y ver más información sobre el dolor y su tratamiento.</p>
+        </div>
+        <div class="foot_two_right">
+          <img src="img/f_contact.png" alt="Informacion de contacto">
+          <h3>Contacto</h3>
+          <p>Con la finalidad de mantener el vínculo médico paciente, le solicitamos llenar este Formulario de Contacto en el caso de cualquier duda o pregunta pendiente.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <div id="obif">
+      <a href="#">Administrador</a> | <span>doctorilabaca.cl | 2015 </span>
+  </div>
+</body>
+</html>

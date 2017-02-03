@@ -1,0 +1,240 @@
+@media only screen and (max-width : 980px ) {
+	#main {
+		margin: auto;
+		padding: 0;
+		text-align: center;
+	}
+	.inibox_left, .inibox_right  {
+		display: inline-block; 
+		padding:10px;
+		text-align: left; 
+		vertical-align: top;
+		width:38%; 
+	}
+	#main > span, #main_cont_left, #main_cont_right {
+		text-align: left;
+	}
+	#main_cont_left {
+		margin-left:0;
+		max-width: 600px;
+	}
+	footer{
+		border-right: 0px;
+		margin: auto;
+		padding: 0;
+	}
+	#foot_cont {
+		border: 0;
+	}
+}
+@media only screen and (max-width : 780px ) {
+	#menu ul li a:link, #menu ul li a:visited {
+		padding:4px 10px; 
+		font-size:0.9em;
+	}
+	#main_cont_right { 
+		margin:0 10px 10px 10px; 
+	}
+	#main > span {
+		margin:0 auto;
+		width:92%;  
+	}
+	#slideshow {
+    	max-height: 300px;
+	}
+	.slidesjs-previous, .slidesjs-next {
+		top: -170px;
+	}
+	.servi-page, .servi-page-two {
+		width:40%;
+	}
+	#main_cont_right h5 {
+		margin-left:0;
+	}
+	a.face, a.link, a.rg, a.twit {
+		display:inline-block; 
+	    height:32px;
+	    overflow:hidden;
+	    text-indent:-9999px;
+		width:33px;
+	}
+	a.face {
+		margin-left:0;
+	}
+	#contentForm {
+	background:none;
+	padding: 20px 0;
+	text-align: center;
+	margin:0.5em auto;
+	width: 70%;
+	}
+}
+@media only screen and (max-width : 620px ) {
+	#wrapper {
+		margin: 4.5em 0 0 0;
+	}
+	header form {
+		width: 100%;
+	}
+	header form input {
+		background: rgb(220,220,220);
+		border: 1px solid rgb(240,240,240);
+		border-radius: 0.6em;
+		width: 90%;
+	}
+	#bar h1 {
+		font-size:2.2em;
+	}
+	#main_cont_left, #main_cont_right {
+		display: block;
+		width: 95%;
+	}
+	.none-dis, #no-slide {
+		display: none;
+	}
+	#main_cont_right {
+		border-top: 1px solid rgb(150,150,150);
+		border-left: 0;
+		margin: 0.5em auto;
+		text-align: center;
+	}
+	#main_cont_right h5 {
+		margin-left:0;
+	}
+	a.face {
+		margin-left:0;
+	}
+	.inibox_left, .inibox_right  {
+		display: block;  
+		padding: 1em 2%;
+		margin: auto;
+		width:90%; 
+	}
+	.inibox_left h2 {
+		margin-top: 3em;
+	}
+	.inibox_right {
+		padding-bottom: 2.5em;
+	}
+	.foot_one_left, .foot_two_left, .foot_one_right, .foot_two_right {
+		display: block;
+		padding:1em 1%;
+		width:95%;
+		margin: auto;
+	}
+	/*============================ MENU ============================*/
+	.menu_bar {
+		background: url(../img/menu.png) no-repeat 95% 55% rgb(60,60,60);
+		border-bottom: 1px solid rgb(255,255,255);
+		display:block;
+		position: fixed;
+		top:0; 
+		width: 100%;
+		z-index: 101;
+	}
+	.menu_bar .btn-menu {
+		color: rgb(255,255,255);
+		display: block;
+		font-size: 1.4em;
+		padding:1.07em 0.65em; 
+		text-align: left;
+	} 
+	#menu {
+		background:none;
+		border-top:1px solid rgb(221,221,221);
+		margin:0;
+		text-align: left;
+		width:100%;
+	}
+	#menu ul {
+		background:rgba(60,60,60,0.90);
+		border:0; 
+		margin: 0;
+		padding:2% 2% 2% 3%;
+		position: fixed;
+		top:-100%;
+		width: 95%;
+		z-index: 120; 
+	}
+	#menu ul li {
+		display:inline-block;
+		vertical-align: top;
+		width: 49%;
+	}
+	#menu ul > li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	#menu ul li a {
+		display:block;
+		color:rgb(17,17,17);
+		text-align: center;
+		text-decoration:none;
+		max-width: 100%;
+	}
+	#menu ul li a:hover {
+		background: rgb(60,60,60);
+		border:0;
+	}
+	#menu ul li a:link, #menu ul li a:visited {
+		border:1px solid rgb(60,60,60);
+		border-radius: 0.5em; 
+		color:rgb(255,255,255);
+		display:block;
+		font-size:1.2em; 
+		margin-top:0.4em; 
+		padding:1em 0.3em;
+		text-decoration: none;
+	}
+	#menu ul li.current_page_item a:link, #menu ul li.current_page_item a:visited  {
+		background:rgb(250,250,250);
+		border:0;
+		color:rgb(60,60,60);
+	}
+	#menu ul li.current_page_item a:hover {
+		background:rgb(250,250,250);
+	}
+	#bar {
+		margin: 0 auto;
+		padding: 1em 0;
+		top: 0;
+		width: 100%;
+	}
+	footer {
+		display: none;
+	}
+	.maps {
+		display: none;
+	}
+}
+@media only screen and (max-width : 480px ) {
+	#logo {
+		display:block;
+		margin: 0 auto;
+		padding-top: 1.2em;
+		text-align: center;
+		width: 90%;
+	}
+	#logo a img {
+    	margin:10px 0;
+	}
+	#brows_date {
+		display: block;
+	    padding-top:0;
+	    margin: 0 auto;
+	    text-align: center;
+	    width: 90%;
+	}
+	.main_article figure img {
+		display: none;
+	}
+	.main_article figure figcaption {
+		width: 96%;
+		padding: 0 2%;
+	}
+	.servi-page, .servi-page-two {
+		display: block;
+		width:85%;
+		margin: 1em auto;
+	}
+}
